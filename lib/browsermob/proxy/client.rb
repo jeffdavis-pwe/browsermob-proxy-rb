@@ -48,6 +48,7 @@ module BrowserMob
         params[:initialPageRef] = ref if ref
         params[:captureHeaders] = true if opts[:capture_headers]
         params[:captureContent] = true if opts[:capture_content]
+        params[:captureCookies] = true if opts[:capture_cookies]
 
         if opts[:capture_binary_content]
           params[:captureContent] = true
